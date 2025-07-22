@@ -97,34 +97,20 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Logo -->
-    <img src="FlatChat-logo.png" alt="FlatChat Logo" class="logo" />
+  <h1>🟢 FlatChat – Society Feed</h1>
 
-    <!-- App Name + Tagline -->
-    <h1>FlatChat</h1>
-    <p>Your society’s digital hub – connect with neighbors, share updates, and trade locally.</p>
-
-    <!-- Email Signup -->
-    <div class="email-form">
-      <form action="https://YOUR-GOOGLE-FORM-URL" method="POST" target="_blank">
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <button type="submit">Notify Me</button>
-      </form>
-      <p style="font-size: 0.85rem; margin-top: 8px;">Get notified when the app goes live!</p>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="social">
-      <a href="https://wa.me/+918894548040" target="_blank">WhatsApp</a>
-      <a href="https://instagram.com/iraghavbindlish" target="_blank">Instagram</a>
-      <a href="mailto:raghav.bindlish.1@gmail.com">Email</a>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      &copy; 2025 FlatChat. All rights reserved.
-    </div>
+  <div style="margin-bottom: 20px;">
+    <input type="text" id="title" placeholder="Post Title" />
+    <br><br>
+    <textarea id="message" placeholder="Write your message here..." rows="4" cols="40"></textarea>
+    <br><br>
+    <button onclick="postMessage()">Post</button>
   </div>
+
+  <hr>
+
+  <div id="feed"></div>
+
+  <script src="app.js"></script>
 </body>
 </html>
